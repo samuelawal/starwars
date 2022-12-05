@@ -1,13 +1,54 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@font-face {
+  font-family: 'Soloist';
+  src: url('../src/assets/fonts/Soloist.ttf');
+}
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_logo{
+  margin: auto;
+  display: block;
+}
+body {
+  font-family: 'Soloist', sans-serif;
+  color: #e6e60b;
+  background: url(./assets/hero-banner.gif);
+}
+.container{
+  width: 100%;
+  max-width: 720px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: 8vh;
+}
+.myLogo img {
+  margin: auto;
+  display: block;
+ 
+}
+.logo_text{
+  text-align: center;
+  font-size: 2rem;
+}
+.movie_title{
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 25px;
+}
+.select-input{
+  background: none;
+  color: yellow;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px dashed yellow;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

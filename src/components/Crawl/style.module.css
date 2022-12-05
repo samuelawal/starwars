@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    align-items: center;
+    position: relative;
+    height: 400px;
+    font-size: 48px;
+    letter-spacing: 10px;
+    line-height: 200%;
+    perspective: 900px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .container h2 {
+    text-align: center;
+    width: 100%;
+    background: var(--black);
+    padding: 16px;
+    z-index: 1;
+    margin: 0;
+  }
+.crawl{
+    position: relative;
+    text-transform: capitalize;
+    transform-origin: 20% 100%;
+    animation: crawl 30s infinite;
+}
+.crawl:hover {
+    animation-play-state: paused;
+}
+@keyframes crawl {
+    0% {
+      top: 500px;
+      transform: rotateX(10deg) translateZ(0);
+    }
+    100% {
+      top: -3000px;
+      transform: rotateX(10deg) translateZ(-2500px);
+    }
+  }
